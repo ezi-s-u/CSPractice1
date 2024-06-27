@@ -49,8 +49,8 @@ namespace CSPractice1
 
             // 문자열 인덱스 접근 [ ]
             Console.WriteLine("Hello World"[4]); // "o" 출력
-            Console.WriteLine("Hello World"[100]); // 예외 발생
-            Console.WriteLine("Hello World"[-3]); // 예외 발생
+            //Console.WriteLine("Hello World"[100]); // 예외 발생
+            //Console.WriteLine("Hello World"[-3]); // 예외 발생
 
             // 주의
             Console.WriteLine('가' + '힣');
@@ -89,6 +89,10 @@ namespace CSPractice1
             // #1 12-8. var 키워드
             var varnumber = 20;
             // var abc; ==> X 반드시 초기화 해줘야함
+
+            // #1 12-9. 입력
+            string input = Console.ReadLine();
+            Console.WriteLine(input);
         }
     }
 }
