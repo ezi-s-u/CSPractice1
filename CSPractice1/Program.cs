@@ -125,6 +125,11 @@ namespace CSPractice1
                     break;
                     // default도 break 필요하다!!!
             }
+
+            // #2 13-6. 삼항 연산자
+            Console.WriteLine(number % 2 != 1 ? true : false);
+
+
         }
     }
 }
