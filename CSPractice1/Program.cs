@@ -79,7 +79,7 @@ namespace CSPractice1
             output += "World";
             Console.WriteLine(output);
 
-            // #1 12-6. 증감 연산자
+            // #1 12-6. 증감 연산자 *
             int number = 10;
             Console.WriteLine(number++); // 10
             Console.WriteLine(++number); // 12
@@ -93,6 +93,9 @@ namespace CSPractice1
             // #1 12-9. 입력
             string input = Console.ReadLine();
             Console.WriteLine(input);
+
+            // #1 12-10 자료형 변환 *
+            // 굉장히 중요
         }
     }
 }
