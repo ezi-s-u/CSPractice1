@@ -202,6 +202,9 @@ namespace CSPractice1
             { 
                 name = "공짜폰"
             };
+
+            Console.WriteLine(Product.TEX_RATIO);
+            // Console.WriteLine(p1.TEX_RATIO); java는 가능하지만, c#은 불가능
         }
     }
 }
