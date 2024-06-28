@@ -126,7 +126,7 @@ namespace CSPractice1
                     // default도 break 필요하다!!!
             }
 
-            // #2 13-6. 삼항 연산자
+            // #2  13-6. 삼항 연산자
             Console.WriteLine(number % 2 != 1 ? true : false);
 
             // #3 14-1. 반목문과 배열
@@ -147,6 +147,28 @@ namespace CSPractice1
             foreach (var item in foreachArray){
                 Console.WriteLine(item);
             }
+
+            // #4 21-2. 클래스 사용*
+
+            // Random
+            // minValue, maxValue : 이상, 미만
+            Random random = new Random();
+            Console.WriteLine(random.Next(1, 7));
+            Console.WriteLine(random.Next(1, 7));
+            Console.WriteLine(random.Next(1, 7));
+            Console.WriteLine(random.Next(1, 7));
+            Console.WriteLine(random.Next(1, 7));
+            Console.WriteLine(random.Next(1, 7));
+
+            // Math
+            Console.WriteLine(Math.Abs(-9)); // 9
+            Console.WriteLine(Math.Ceiling(42.3)); // 43
+            Console.WriteLine(Math.Floor(42.9)); // 42
+            Console.WriteLine(Math.Round(42.4)); // 43
+            Console.WriteLine(Math.Min(42, 1)); // 1
+            Console.WriteLine(Math.Max(42, 1)); // 42
+            Console.WriteLine(Math.PI); // 3.142592~
+
         }
     }
 }
