@@ -19,6 +19,11 @@ namespace CSPractice1
         {
             Console.WriteLine("(인스턴스) 생성자 호출");
         }
+
+        ~Sample()
+        {
+            Console.WriteLine("소멸자 호출");
+        }
     }
     class MyMath
     {
@@ -257,6 +262,10 @@ namespace CSPractice1
             Console.WriteLine("두 번째 위치");
             Sample sample = new Sample();
             Console.WriteLine("세 번째 위치");
+
+            // #5 22-7. 소멸자
+            // 가비지컬렉터가 인스턴스를 정리하는 순간에 호출
+
 
 
         }
