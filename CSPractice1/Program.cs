@@ -302,7 +302,7 @@ namespace CSPractice1
             Box b = new Box();
             b.Width = 180;
             b.Height = 100;
-            b.Height = -100;
+            // b.Height = -100; // 예외 발생
 
             // #5 22-9. 값 복사와 참조 복사
             Test test = new Test();
@@ -329,6 +329,12 @@ namespace CSPractice1
                     if (dog != null) { dog.Bark(); } // as 사용 후에는 null인지 확인 해봐야함
                 }
             }
+
+            // #6 23-6. 상속의 생성자
+            Child child = new Child();
+            Child child2 = new Child("홍길동");
+
+
         }
     }
 }
