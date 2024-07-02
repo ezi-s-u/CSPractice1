@@ -11,6 +11,7 @@ namespace CSPractice1
         public static int classVar = 1;
         public int instancevar = 2;
 
+        // Abs (int)
         public static int Abs(int input)
         {
             Console.WriteLine(classVar);
@@ -18,6 +19,13 @@ namespace CSPractice1
             // Console.WriteLine(instancevar);
             return (input >= 0) ? input : -input;
         }
+
+        // Abs (double)
+        public static double Abs(double input) { return 0; }
+
+        // Abs (int)
+        // public static double Abs(int v) {  return 0; }
+        // 메서드 시그네이처(이름, 매개변수가 겹쳐서 안 됨)
     }
     class FistClass
     {
@@ -221,6 +229,14 @@ namespace CSPractice1
             // Console.WriteLine(p1.TEX_RATIO); java는 가능하지만, c#은 불가능
 
             // #5 22-3. 클래스 메서드
+
+            // #5 22-4. 메서드 오버로딩
+            Console.WriteLine(MyMath.Abs(-10)); // Abs(int)
+            Console.WriteLine(MyMath.Abs(10.0)); // Abs(double)
+            Console.WriteLine(MyMath.Abs(-10L)); // Abs(double) => double로 자동형변환되어서 호출함
+            Console.WriteLine(MyMath.Abs(3.0f)); // Abs(double) => double로 자동형변환되어서 호출함
+            // 표현 가능한 수가 float보다 double이 더 크기 때문에 자동형변환된다.
+
         }
     }
 }
