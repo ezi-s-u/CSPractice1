@@ -6,6 +6,19 @@ using System.Threading.Tasks;
 
 namespace CSPractice1
 {
+    class MyMath
+    {
+        public static int classVar = 1;
+        public int instancevar = 2;
+
+        public static int Abs(int input)
+        {
+            Console.WriteLine(classVar);
+            // 클래스 메서드에서 인스턴스 변수 접근 불가
+            // Console.WriteLine(instancevar);
+            return (input >= 0) ? input : -input;
+        }
+    }
     class FistClass
     {
         
@@ -206,6 +219,8 @@ namespace CSPractice1
             // #4 21-4. 클래스 변수
             Console.WriteLine(Product.TEX_RATIO);
             // Console.WriteLine(p1.TEX_RATIO); java는 가능하지만, c#은 불가능
+
+            // #5 22-3. 클래스 메서드
         }
     }
 }
