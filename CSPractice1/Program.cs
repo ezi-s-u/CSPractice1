@@ -6,6 +6,28 @@ using System.Threading.Tasks;
 
 namespace CSPractice1
 {
+    class Box
+    {
+        public int Width { get; set; }
+
+        private int heigt;
+
+        public int Height
+        {
+            get { return heigt; }
+            set { 
+                if(value > 0)
+                {
+                    heigt = value;
+                }
+                else
+                {
+                    throw new Exception(); // 예외 발생시키는 코드
+                }
+            }
+        }
+
+    }
     class Sample
     {
         public static int value;
@@ -264,9 +286,13 @@ namespace CSPractice1
             Console.WriteLine("세 번째 위치");
 
             // #5 22-7. 소멸자
-            // 가비지컬렉터가 인스턴스를 정리하는 순간에 호출
+            // 가비지컬렉터가, 인스턴스를 정리하는 순간에 호출
 
-
+            // #5 22-8. 속성(Property)
+            Box b = new Box();
+            b.Width = 180;
+            b.Height = 100;
+            b.Height = -100;
 
         }
     }
